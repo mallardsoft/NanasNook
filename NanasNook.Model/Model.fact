@@ -1,0 +1,244 @@
+﻿namespace NanasNook.Model;
+
+fact Machine {
+	unique;
+	
+	ProvisionFrontOffice *currentProvisionFrontOffice {
+		ProvisionFrontOffice p : p.machine = this
+			where p.isCurrent
+	}
+	
+	ProvisionKitchen *currentProvisionKitchen {
+		ProvisionKitchen p : p.machine = this
+			where p.isCurrent
+	}
+}
+
+fact Company {
+	string identifier;
+
+	Order* backloggedOrders {
+		Order o : o.company = this
+			where o.isBacklogged
+	}
+
+	Order* pendingOrders {
+		Order o : o.company = this
+			where o.isPending
+	}
+
+	CakeSize* cakeSizes {
+		CakeSize c : c.company = this
+	}
+
+	CakeFlavor* cakeFlavors {
+		CakeFlavor c : c.company = this
+	}
+
+	FrostingFlavor* frostingFlavors {
+		FrostingFlavor c : c.company = this
+	}
+
+	FrostingColor* frostingColors {
+		FrostingColor c : c.company = this
+	}
+
+	City* cities {
+		City c : c.company = this
+	}
+}
+
+fact ProvisionFrontOffice {
+	unique;
+	Machine machine;
+	Company company;
+
+	bool isCurrent {
+		not exists DeprovisionFrontOffice d : d.provision = this
+	}
+}
+
+fact DeprovisionFrontOffice {
+	ProvisionFrontOffice provision;
+}
+
+fact Kitchen {
+	Company company;
+	string name;
+
+	Pull* pullsInProgress {
+		Pull p : p.kitchen = this
+			where not p.isCompleted
+	}
+
+	Completed* pullsCompleted {
+		Completed c : c.commitment.pull.kitchen = this
+			where not c.isDelivered
+	}
+}
+
+fact ProvisionKitchen {
+	unique;
+	Machine machine;
+	Kitchen kitchen;
+
+	bool isCurrent {
+		not exists DeprovisionKitchen d : d.provision = this
+	}
+}
+
+fact DeprovisionKitchen {
+	ProvisionKitchen provision;
+}
+
+fact Order {
+	unique;
+	publish Company company;
+
+	bool isBacklogged {
+		not exists Pull p : p.order = this
+	}
+
+	bool isInProgress {
+		not exists Completed c : c.commitment.pull.order = this
+	}
+
+	bool isCompleted {
+		not exists Delivered d : d.completed.commitment.pull.order = this
+	}
+
+	bool isPending {
+		not exists Closed c : c.delivered.completed.commitment.pull.order = this
+	}
+
+	ContactInformation* currentContactInformationSet {
+		ContactInformation c : c.order = this
+			where c.isCurrent
+	}
+
+	CakeDetail* currentCakeDetails {
+		CakeDetail d : d.order = this
+			where d.isCurrent
+	}
+
+	DeliveryDetail* currentDeliveryDetails {
+		DeliveryDetail d : d.order = this
+			where d.isCurrent
+	}
+
+	Pull* pulls {
+		Pull p : p.order = this
+	}
+}
+
+fact ContactInformation {
+	Order order;
+
+	string name;
+	string phoneNumber;
+
+	ContactInformation* prior;
+
+	bool isCurrent {
+		not exists ContactInformation next : next.prior = this
+	}
+}
+
+fact CakeSize {
+	Company company;
+    string name;
+}
+
+fact CakeFlavor {
+	Company company;
+	string name;
+}
+
+fact FrostingFlavor {
+	Company company;
+	string name;
+}
+
+fact FrostingColor {
+	Company company;
+	string name;
+}
+
+fact CakeDetail {
+	Order order;
+
+	CakeSize size;
+    CakeFlavor cakeFlavor;
+    FrostingFlavor frostingFlavor;
+    FrostingColor mainColor;
+    FrostingColor decorationColor;
+    string message;
+    string cakeInstructions;
+
+	CakeDetail *prior;
+
+	bool isCurrent {
+		not exists CakeDetail next : next.prior = this
+	}
+}
+
+fact City {
+	Company company;
+	string name;
+}
+
+fact DeliveryDetail {
+	Order order;
+
+	City city;
+	string streetAddress;
+	date expectedDeliveryDate;
+    string deliveryInstructions;
+
+	DeliveryDetail *prior;
+
+	bool isCurrent {
+		not exists DeliveryDetail next : next.prior = this
+	}
+}
+
+fact Pull {
+	Order order;
+	Kitchen kitchen;
+
+	bool isCompleted {
+		exists Completed c : c.commitment.pull = this
+	}
+
+	Commitment* currentCommitments {
+		Commitment c : c.pull = this
+			where c.isCurrent
+	}
+}
+
+fact Commitment {
+	Pull pull;
+	CakeDetail* cakeDetail;
+	Commitment* prior;
+
+	bool isCurrent {
+		not exists Commitment next : next.prior = this
+	}
+}
+
+fact Completed {
+	Commitment commitment;
+
+	bool isDelivered {
+		exists Delivered d : d.completed = this
+	}
+}
+
+fact Delivered {
+	Completed completed;
+	DeliveryDetail deliveryDetail;
+}
+
+fact Closed {
+	Delivered delivered;
+}

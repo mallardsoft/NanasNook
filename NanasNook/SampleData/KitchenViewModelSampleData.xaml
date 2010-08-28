@@ -1,0 +1,457 @@
+﻿<NanasNook_ViewModel_KitchenScreen:KitchenViewModel xmlns:NanasNook_ViewModel_KitchenScreen="clr-namespace:NanasNook.ViewModel.KitchenScreen;assembly=NanasNook.ViewModel" xmlns:NanasNook_Model="clr-namespace:NanasNook.Model;assembly=NanasNook.Model">
+	<NanasNook_ViewModel_KitchenScreen:KitchenViewModel.BackloggedOrders>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Class curabitur aliquam nam" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Nisl sociosqu suscipit euismod">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="True" IsInProgress="False" IsPending="True" IsBacklogged="False">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Cras aenean maecenas curae integer"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Est facilisi eget morbi hac" PhoneNumber="Congue cursus elit vestibulum"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Adipiscing enim nulla proin faucibus" PhoneNumber="Habitant leo mus"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Dictum blandit lectus" PhoneNumber="Commodo conubia nec inceptos"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Non interdum libero lobortis" PhoneNumber="Parturient vestibulum"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Nascetur vestibulum" PhoneNumber="Cubilia erat adipiscing"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Parturient ligula eros" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Pharetra per dapibus"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Vestibulum placerat pulvinar sed dignissim" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Litora nibh vestibulum"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Augue luctus sem dolor elementum" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Magnis mattis"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Sagittis egestas" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Fames felis sit facilisis ipsum"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Vel nisi" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Justo senectus"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Vestibulum duis mauris donec nunc" IsCurrent="True" Message="Etiam nullam amet"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Phasellus consequat" IsCurrent="False" Message="Ante adipiscing praesent accumsan"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Aptent bibendum" IsCurrent="True" Message="Quisque parturient arcu"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Dictumst vivamus" IsCurrent="False" Message="Fusce sed eleifend convallis aliquam"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Lorem aliquet auctor vestibulum" IsCurrent="True" Message="Diam dis"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Adipiscing torquent feugiat" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Sed vestibulum senectus sociosqu">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="False" IsInProgress="True" IsPending="False" IsBacklogged="True">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Fermentum ultrices parturient mauris gravida"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Adipiscing sed" PhoneNumber="Dis imperdiet urna natoque"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Posuere platea faucibus parturient" PhoneNumber="Primis metus"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Rutrum habitant est sapien potenti" PhoneNumber="Cras hac duis vestibulum"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Inceptos leo mus malesuada semper" PhoneNumber="Vestibulum adipiscing morbi"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Interdum penatibus parturient porttitor nec" PhoneNumber="Vestibulum tincidunt nunc amet pretium"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Non per" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Vestibulum sed neque"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Lobortis ante tristique" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Sem rhoncus adipiscing arcu"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Ultricies nascetur sociis netus" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Nulla sit parturient vel"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Pharetra sodales placerat diam nam" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Eget viverra"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Taciti tellus pulvinar" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Elit enim tempor sagittis vestibulum"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Nunc lacus odio" IsCurrent="False" Message="Vehicula volutpat mollis maecenas"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Iaculis fringilla praesent montes lorem" IsCurrent="True" Message="Vestibulum habitasse magna"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Vestibulum accumsan" IsCurrent="False" Message="Bibendum dictumst"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Nostra hendrerit orci pede" IsCurrent="True" Message="Ornare quam eleifend lacinia"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Massa himenaeos" IsCurrent="False" Message="Nam facilisi laoreet quis"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Porta suscipit torquent" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Libero lacus nunc">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="True" IsInProgress="False" IsPending="True" IsBacklogged="False">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Adipiscing purus tempus"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Nibh lorem leo bibendum mus" PhoneNumber="Vivamus vestibulum morbi dignissim nullam"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Dictumst nisi aliquam aliquet" PhoneNumber="Nisl adipiscing nulla"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Blandit parturient" PhoneNumber="Eleifend facilisi"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Elementum aptent" PhoneNumber="Nunc auctor"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Nec congue faucibus habitant vestibulum" PhoneNumber="Facilisis odio non commodo vestibulum"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Adipiscing inceptos fermentum proin" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Fringilla habitasse cursus augue dolor"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Conubia orci per interdum dictum" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Lectus lobortis pede"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Fames quam hendrerit" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Felis himenaeos imperdiet quis"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Sed urna ipsum nascetur" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Parturient cubilia"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Dapibus cras sem" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Pharetra duis justo"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Tortor parturient risus turpis ultrices" IsCurrent="True" Message="Vehicula volutpat velit"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Dis venenatis aliquam varius" IsCurrent="False" Message="Vulputate est erat eros"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Maecenas aenean vitae" IsCurrent="True" Message="Class curabitur phasellus hac"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Consequat curae" IsCurrent="False" Message="Donec integer etiam"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Praesent mauris vestibulum accumsan fusce" IsCurrent="True" Message="Convallis quisque"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Malesuada amet egestas sit euismod" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Rhoncus donec sodales">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="False" IsInProgress="True" IsPending="False" IsBacklogged="True">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Lorem vel placerat ante"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Ultrices adipiscing vehicula" PhoneNumber="Morbi neque hac parturient"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Magnis vestibulum leo mattis nisi" PhoneNumber="Netus nisl"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Mauris mollis nunc" PhoneNumber="Mus lacinia vulputate nec non"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Curabitur volutpat montes vestibulum phasellus" PhoneNumber="Laoreet natoque"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Maecenas nulla odio nostra" PhoneNumber="Porta praesent consequat purus accumsan"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Bibendum per risus" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Convallis velit dignissim dictumst"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Orci vitae posuere class eleifend" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Facilisi adipiscing parturient"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Curae ornare faucibus" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Pede sed"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Elementum platea quam primis" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Facilisis quis"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Fermentum urna" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Fringilla vestibulum potenti pretium cras"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Arcu diam pulvinar" IsCurrent="False" Message="Penatibus porttitor sagittis feugiat eget"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Tincidunt gravida magna senectus" IsCurrent="True" Message="Iaculis tristique massa"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Sociosqu nam" IsCurrent="False" Message="Sed dis est metus"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Elit enim ultricies erat" IsCurrent="True" Message="Ligula suscipit venenatis torquent"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Eros vestibulum vestibulum" IsCurrent="False" Message="Litora nibh luctus"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Rutrum etiam habitant sem" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Vestibulum mauris adipiscing">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="True" IsInProgress="False" IsPending="True" IsBacklogged="False">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Vestibulum fusce viverra lorem morbi"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Nunc semper hendrerit" PhoneNumber="Parturient amet vestibulum justo"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Integer vestibulum himenaeos hac" PhoneNumber="Nascetur adipiscing imperdiet quisque"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Leo pharetra sociis lacus" PhoneNumber="Vivamus mus taciti"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Parturient lorem" PhoneNumber="Magna aliquam massa malesuada"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Aliquet vestibulum nec" PhoneNumber="Penatibus vestibulum blandit ante tellus"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Commodo adipiscing" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Porttitor non tincidunt"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Conubia cubilia dapibus metus morbi" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Placerat tristique egestas euismod pulvinar"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Tempor ultricies" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Tempus per sagittis tortor feugiat"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Gravida iaculis senectus turpis parturient" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Vestibulum sociosqu arcu venenatis varius"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Suscipit sed lacinia vulputate" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Torquent neque curabitur aenean"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Adipiscing parturient" IsCurrent="True" Message="Nulla proin"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Sit vestibulum vestibulum" IsCurrent="False" Message="Inceptos augue adipiscing"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Dolor habitasse parturient vestibulum vel" IsCurrent="True" Message="Nam sapien"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Fames felis vestibulum interdum" IsCurrent="False" Message="Aliquam duis"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Lobortis ipsum adipiscing" IsCurrent="True" Message="Sed dis est"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Parturient vestibulum laoreet diam sem" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Himenaeos pede imperdiet quam lorem">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="False" IsInProgress="True" IsPending="False" IsBacklogged="True">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Netus ultrices sit nullam"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Hac integer" PhoneNumber="Cursus quisque vestibulum vivamus"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Adipiscing vitae aliquam dignissim dictum" PhoneNumber="Accumsan lectus bibendum parturient"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Class vestibulum dictumst vestibulum" PhoneNumber="Elementum eleifend"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Adipiscing libero facilisi aliquet eros" PhoneNumber="Leo faucibus parturient facilisis mus"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Curae donec vestibulum" PhoneNumber="Ligula blandit"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Litora nibh commodo nec habitant" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Luctus magnis fermentum nisi vestibulum"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Fringilla inceptos adipiscing etiam" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Non mattis fusce"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Per mauris nisl nunc" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Interdum parturient lobortis"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Mollis odio" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Montes habitasse"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Nascetur sed nostra ornare" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Orci platea hendrerit"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Aptent natoque vestibulum adipiscing" IsCurrent="False" Message="Nulla eget auctor porta"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Posuere potenti phasellus elit pretium" IsCurrent="True" Message="Purus vel rhoncus nam parturient"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Vehicula congue sodales" IsCurrent="False" Message="Viverra consequat sed aliquam volutpat"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Maecenas enim" IsCurrent="True" Message="Risus convallis"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Praesent dis est velit" IsCurrent="False" Message="Vestibulum erat"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Conubia cubilia" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Elementum vitae nisi">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="True" IsInProgress="False" IsPending="True" IsBacklogged="False">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Primis dapibus rutrum"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Amet ante adipiscing" PhoneNumber="Parturient dis arcu sagittis"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Lacus diam potenti" PhoneNumber="Lorem vestibulum"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Pretium taciti est" PhoneNumber="Eget vestibulum tellus"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Hac tempor magna tempus elit" PhoneNumber="Tortor senectus tincidunt turpis tristique"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Rhoncus varius massa enim" PhoneNumber="Sodales adipiscing"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Parturient metus morbi viverra neque" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Netus sociosqu vestibulum nulla aenean"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Ultricies suscipit vestibulum venenatis porta" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Leo erat vulputate curabitur torquent"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Phasellus ultrices mus" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Aliquam eros"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Purus vehicula" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Consequat volutpat convallis risus nec"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Velit maecenas mauris praesent dignissim" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Nullam nibh accumsan"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Morbi malesuada egestas pharetra euismod" IsCurrent="True" Message="Vestibulum quis"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Feugiat nulla proin placerat urna" IsCurrent="False" Message="Penatibus gravida iaculis sem"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Pulvinar sit vel" IsCurrent="True" Message="Lacinia augue sapien semper sociis"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Dolor fames laoreet vestibulum nam" IsCurrent="False" Message="Natoque posuere felis"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Ipsum cras duis justo" IsCurrent="True" Message="Porttitor sed nunc"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Facilisis integer" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Duis nunc ornare">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="False" IsInProgress="True" IsPending="False" IsBacklogged="True">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Adipiscing parturient"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Vestibulum lorem morbi" PhoneNumber="Sit lectus vel"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Blandit adipiscing facilisi libero commodo" PhoneNumber="Nulla ligula"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Nam pede" PhoneNumber="Sed dis est hac"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Faucibus imperdiet malesuada conubia cubilia" PhoneNumber="Proin parturient litora luctus habitant"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Magnis leo dapibus" PhoneNumber="Inceptos mus"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Penatibus vestibulum" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Interdum lobortis mattis"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Quam vestibulum nec non per" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Nascetur sed sem"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Quis pharetra egestas adipiscing porttitor" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Mauris parturient"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Mollis urna" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Tincidunt tristique placerat montes"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Pulvinar sit cras augue dolor" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Vel sagittis nostra"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Bibendum aptent" IsCurrent="False" Message="Quisque nisl"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Auctor congue vestibulum" IsCurrent="True" Message="Non nunc class fermentum"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Curae per dictumst fringilla" IsCurrent="False" Message="Donec cursus sed"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Habitasse dictum" IsCurrent="True" Message="Etiam fusce vivamus odio"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Hendrerit eleifend sem himenaeos aliquam" IsCurrent="False" Message="Aliquet orci"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Fames senectus" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Ultricies tempus massa">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="True" IsInProgress="False" IsPending="True" IsBacklogged="False">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Ultricies sociosqu"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Maecenas eget dignissim lacinia justo" PhoneNumber="Vestibulum laoreet praesent"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Sapien lacus elit elementum" PhoneNumber="Adipiscing parturient vestibulum facilisis"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Natoque vestibulum posuere semper accumsan" PhoneNumber="Enim fermentum"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Fringilla habitasse" PhoneNumber="Bibendum est dictumst erat eros"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Nibh adipiscing hendrerit nisi" PhoneNumber="Sociis potenti himenaeos hac parturient"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Vestibulum taciti" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Lorem nisl"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Pretium imperdiet leo malesuada" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Penatibus rhoncus"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Porttitor sodales" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Viverra eleifend nunc tellus"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Tempor magna mus" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Facilisi aliquam"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Tincidunt tristique integer" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Odio nec orci vestibulum"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Suscipit torquent platea" IsCurrent="True" Message="Venenatis amet"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Vulputate felis" IsCurrent="False" Message="Curabitur nam primis ipsum sed"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Phasellus euismod ultrices ante" IsCurrent="True" Message="Vestibulum vestibulum adipiscing"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Feugiat parturient vestibulum consequat" IsCurrent="False" Message="Convallis vehicula rutrum volutpat"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Dis gravida arcu" IsCurrent="True" Message="Iaculis diam"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Non tortor per quisque sed" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Vel lorem himenaeos imperdiet malesuada">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="False" IsInProgress="True" IsPending="False" IsBacklogged="True">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Turpis sem metus"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Urna mauris nullam" PhoneNumber="Vestibulum vitae"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Non aptent" PhoneNumber="Per class sed"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Phasellus auctor congue pulvinar" PhoneNumber="Vestibulum consequat"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Cursus sagittis convallis adipiscing" PhoneNumber="Parturient dictum blandit curae cras"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Lectus senectus sociosqu" PhoneNumber="Duis suscipit libero commodo"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Conubia vestibulum" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Cubilia torquent"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Sem dapibus dignissim" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Vestibulum elementum nunc"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Ligula sit ultrices egestas facilisis" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Litora donec amet euismod etiam"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Adipiscing feugiat vehicula fermentum fringilla" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Ante volutpat habitasse luctus hendrerit"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Parturient maecenas praesent fusce" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Vestibulum magnis"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Adipiscing faucibus venenatis" IsCurrent="False" Message="Morbi pede neque habitant"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Inceptos netus" IsCurrent="True" Message="Interdum lobortis sit quam nascetur"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Nulla porta vel vivamus vulputate" IsCurrent="False" Message="Nam varius aliquam"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Sed dis purus risus" IsCurrent="True" Message="Curabitur est aenean hac quis"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Leo velit mus nec" IsCurrent="False" Message="Parturient pharetra aliquet placerat"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+	</NanasNook_ViewModel_KitchenScreen:KitchenViewModel.BackloggedOrders>
+	<NanasNook_ViewModel_KitchenScreen:KitchenViewModel.OrdersCompleted>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+	</NanasNook_ViewModel_KitchenScreen:KitchenViewModel.OrdersCompleted>
+	<NanasNook_ViewModel_KitchenScreen:KitchenViewModel.OrdersInProgress>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+		<NanasNook_ViewModel_KitchenScreen:PullSummaryViewModel/>
+	</NanasNook_ViewModel_KitchenScreen:KitchenViewModel.OrdersInProgress>
+	<NanasNook_ViewModel_KitchenScreen:KitchenViewModel.SelectedBackloggedOrder>
+		<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel City="Vestibulum arcu accumsan adipiscing mattis" ExpectedDeliveryDate="08/22/2010 17:16:20" Size="Cursus sed">
+			<NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+				<NanasNook_Model:Order IsCompleted="False" IsInProgress="True" IsPending="False" IsBacklogged="True">
+					<NanasNook_Model:Order.Company>
+						<NanasNook_Model:Company Identifier="Gravida bibendum dictumst morbi nulla"/>
+					</NanasNook_Model:Order.Company>
+					<NanasNook_Model:Order.CurrentContactInformationSet>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Rhoncus lobortis convallis" PhoneNumber="Nascetur sodales"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Netus pharetra" PhoneNumber="Placerat nulla enim"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Parturient pulvinar erat eros" PhoneNumber="Viverra porta vel vestibulum nam"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Vestibulum sociis" PhoneNumber="Adipiscing purus sed parturient"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Dis taciti est dignissim" PhoneNumber="Nibh sagittis"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Nisi risus hac" PhoneNumber="Elementum facilisis tellus fermentum"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Nisl tempor aliquam" PhoneNumber="Velit vitae nunc"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Vestibulum class odio tempus fringilla" PhoneNumber="Leo habitasse"/>
+						<NanasNook_Model:ContactInformation IsCurrent="True" Name="Senectus hendrerit orci integer" PhoneNumber="Quisque curae himenaeos"/>
+						<NanasNook_Model:ContactInformation IsCurrent="False" Name="Imperdiet vivamus malesuada" PhoneNumber="Sociosqu vestibulum pede aliquam"/>
+					</NanasNook_Model:Order.CurrentContactInformationSet>
+					<NanasNook_Model:Order.CurrentDeliveryDetails>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Suscipit donec mus etiam torquent" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Penatibus fusce porttitor"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Ultrices lorem nec vehicula quam" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Non aliquet tincidunt per"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Quis tristique tortor adipiscing" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Turpis urna"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Varius cras aenean blandit parturient" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Commodo conubia vestibulum mauris sed"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Volutpat morbi vestibulum duis" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Sem nunc"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Amet nullam ultricies ante venenatis" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Aptent vulputate arcu"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Curabitur diam" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Maecenas phasellus cubilia sit praesent"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Dapibus nulla eget accumsan" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Elit proin enim augue dolor"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Vel auctor bibendum egestas congue" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="True" StreetAddress="Consequat dictumst eleifend adipiscing"/>
+						<NanasNook_Model:DeliveryDetail DeliveryInstructions="Nam facilisi parturient" ExpectedDeliveryDate="08/22/2010 17:16:20" IsCurrent="False" StreetAddress="Erat eros"/>
+					</NanasNook_Model:Order.CurrentDeliveryDetails>
+					<NanasNook_Model:Order.CurrentCakeDetails>
+						<NanasNook_Model:CakeDetail CakeInstructions="Parturient nam" IsCurrent="True" Message="Sed eleifend"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Dis proin penatibus porttitor vestibulum" IsCurrent="False" Message="Vestibulum est iaculis hac augue"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Tincidunt mauris" IsCurrent="True" Message="Dolor facilisi"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Fames felis leo mollis" IsCurrent="False" Message="Tristique lacinia"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Adipiscing ipsum" IsCurrent="True" Message="Mus ultricies justo laoreet"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Parturient nec diam montes" IsCurrent="False" Message="Vestibulum natoque posuere"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Faucibus venenatis eget lacus nostra" IsCurrent="True" Message="Vulputate vestibulum curabitur ornare non"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Lorem per sed" IsCurrent="False" Message="Magna sem platea adipiscing massa"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Primis metus rutrum habitant inceptos" IsCurrent="True" Message="Elit parturient potenti sapien vestibulum"/>
+						<NanasNook_Model:CakeDetail CakeInstructions="Vestibulum semper pretium morbi neque" IsCurrent="False" Message="Phasellus interdum consequat sit adipiscing"/>
+					</NanasNook_Model:Order.CurrentCakeDetails>
+					<NanasNook_Model:Order.Pulls>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+						<NanasNook_Model:Pull/>
+					</NanasNook_Model:Order.Pulls>
+				</NanasNook_Model:Order>
+			</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel.Order>
+		</NanasNook_ViewModel_KitchenScreen:OrderSummaryViewModel>
+	</NanasNook_ViewModel_KitchenScreen:KitchenViewModel.SelectedBackloggedOrder>
+</NanasNook_ViewModel_KitchenScreen:KitchenViewModel>

@@ -1,0 +1,95 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit"
+	mc:Ignorable="d"
+	x:Class="NanasNook.DeliveryDetailControl"
+	x:Name="UserControl"
+	d:DesignWidth="371" d:DesignHeight="188" Background="White" FontSize="14.667">
+	<UserControl.Resources>
+		<DataTemplate x:Key="StringTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding Mode=OneWay}"/>
+			</StackPanel>
+		</DataTemplate>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" d:DataContext="{d:DesignData /SampleData/NewOrderDetailViewModelSampleData.xaml}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="0.72*"/>
+		</Grid.ColumnDefinitions>
+		<Label Content="City:" HorizontalAlignment="Left" d:LayoutOverrides="Height" VerticalAlignment="Center"/>
+		<Label Content="Street Address:" VerticalAlignment="Center" d:LayoutOverrides="Width" Grid.Row="1" HorizontalAlignment="Left"/>
+		<Label Content="Deliver By:" HorizontalAlignment="Left" Grid.Row="2" d:LayoutOverrides="Height" VerticalAlignment="Center"/>
+		<Label Content="Instructions:" d:LayoutOverrides="Width" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+		<ComboBox Grid.Column="1" VerticalAlignment="Center" IsEditable="True" ItemTemplate="{DynamicResource StringTemplate}" ItemsSource="{Binding Cities}" Text="{Binding City}"/>
+		<TextBox TextWrapping="Wrap" Text="{Binding StreetAddress}" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+		<TextBox TextWrapping="Wrap" Text="{Binding DeliveryInstructions}" Grid.Column="1" Grid.Row="3" Height="80" VerticalAlignment="Center"/>
+		<Grid Grid.ColumnSpan="2" Margin="107.32,0,0,0" Grid.Row="2" d:LayoutOverrides="Width">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.5*"/>
+				<ColumnDefinition Width="0.5*"/>
+			</Grid.ColumnDefinitions>
+			<Custom:DatePicker d:LayoutOverrides="Width" SelectedDate="{Binding ExpectedDeliveryDate}"/>
+			<ComboBox d:LayoutOverrides="Height" Grid.Column="1" SelectedIndex="{Binding ExpectedDeliveryTimeSlot}">
+                <ComboBoxItem Content="12:00 AM" />
+                <ComboBoxItem Content="12:30 AM" />
+                <ComboBoxItem Content="1:00 AM" />
+                <ComboBoxItem Content="1:30 AM" />
+                <ComboBoxItem Content="2:00 AM" />
+                <ComboBoxItem Content="2:30 AM" />
+                <ComboBoxItem Content="3:00 AM" />
+                <ComboBoxItem Content="3:30 AM" />
+                <ComboBoxItem Content="4:00 AM" />
+                <ComboBoxItem Content="4:30 AM" />
+                <ComboBoxItem Content="5:00 AM" />
+                <ComboBoxItem Content="5:30 AM" />
+                <ComboBoxItem Content="6:00 AM" />
+                <ComboBoxItem Content="6:30 AM" />
+                <ComboBoxItem Content="7:00 AM" />
+                <ComboBoxItem Content="7:30 AM" />
+                <ComboBoxItem Content="8:00 AM" />
+                <ComboBoxItem Content="8:30 AM" />
+                <ComboBoxItem Content="9:00 AM" />
+                <ComboBoxItem Content="9:30 AM" />
+                <ComboBoxItem Content="10:00 AM" />
+                <ComboBoxItem Content="10:30 AM" />
+                <ComboBoxItem Content="11:00 AM" />
+                <ComboBoxItem Content="11:30 AM" />
+                <ComboBoxItem Content="12:00 PM" />
+                <ComboBoxItem Content="12:30 PM" />
+                <ComboBoxItem Content="1:00 PM" />
+                <ComboBoxItem Content="1:30 PM" />
+                <ComboBoxItem Content="2:00 PM" />
+                <ComboBoxItem Content="2:30 PM" />
+                <ComboBoxItem Content="3:00 PM" />
+                <ComboBoxItem Content="3:30 PM" />
+                <ComboBoxItem Content="4:00 PM" />
+                <ComboBoxItem Content="4:30 PM" />
+                <ComboBoxItem Content="5:00 PM" />
+                <ComboBoxItem Content="5:30 PM" />
+                <ComboBoxItem Content="6:00 PM" />
+                <ComboBoxItem Content="6:30 PM" />
+                <ComboBoxItem Content="7:00 PM" />
+                <ComboBoxItem Content="7:30 PM" />
+                <ComboBoxItem Content="8:00 PM" />
+                <ComboBoxItem Content="8:30 PM" />
+                <ComboBoxItem Content="9:00 PM" />
+                <ComboBoxItem Content="9:30 PM" />
+                <ComboBoxItem Content="10:00 PM" />
+                <ComboBoxItem Content="10:30 PM" />
+                <ComboBoxItem Content="11:00 PM" />
+                <ComboBoxItem Content="11:30 PM" />
+            </ComboBox>
+        </Grid>
+	</Grid>
+</UserControl>

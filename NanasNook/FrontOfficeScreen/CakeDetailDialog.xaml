@@ -1,0 +1,27 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:NanasNook" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="NanasNook.CakeDetailDialog"
+	x:Name="Window"
+	Title="CakeDetailDialog"
+	Width="640" Height="364" FontSize="14.667">
+	<Window.Background>
+		<SolidColorBrush Color="{DynamicResource FrontOfficeBackgroundColor}"/>
+	</Window.Background>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.749*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Border Margin="5,5,5,0" Background="White">
+			<local:CakeDetailControl Margin="5"/>
+		</Border>
+		<StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Bottom" d:LayoutOverrides="Width" HorizontalAlignment="Right" Margin="5" ToolTip="v">
+			<Button Content="OK" IsDefault="True" Margin="5,0,0,0" Width="60" Height="25"
+                Click="OK_Click" />
+			<Button Content="Cancel" IsCancel="True" Margin="5,0,0,0" Width="60" Height="25"/>
+		</StackPanel>
+	</Grid>
+</Window>

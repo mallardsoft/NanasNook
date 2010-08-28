@@ -1,0 +1,28 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="NanasNook.ProvisionControl"
+	x:Name="UserControl"
+	d:DesignWidth="417" d:DesignHeight="123" FontSize="14.667">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="0.43*"/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Label Content="Company:" VerticalAlignment="Center"/>
+		<Label Content="Kitchen:" VerticalAlignment="Center" Grid.Row="1"/>
+		<TextBox TextWrapping="Wrap" Text="{Binding CompanyName, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" VerticalAlignment="Center" Margin="3"/>
+		<TextBox TextWrapping="Wrap" Text="{Binding KitchenName, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="3"/>
+		<Button Content="Front Office" Command="{Binding ProvisionFrontOffice}" Grid.Column="2" VerticalAlignment="Center" Margin="3"/>
+        <Button Content="Kitchen" Command="{Binding ProvisionKitchen}" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Margin="3"/>
+	</Grid>
+</UserControl>

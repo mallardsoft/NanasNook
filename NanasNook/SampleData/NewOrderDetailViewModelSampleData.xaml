@@ -1,0 +1,62 @@
+﻿<NanasNook_ViewModel_FrontOfficeScreen:OrderSnapshot xmlns:NanasNook_ViewModel_FrontOfficeScreen="clr-namespace:NanasNook.ViewModel.FrontOfficeScreen;assembly=NanasNook.ViewModel" xmlns:System="clr-namespace:System;assembly=mscorlib" CakeFlavor="Aenean vestibulum curabitur adipiscing cras" City="Euismod feugiat odio" CakeSize="Accumsan adipiscing facilisis" CakeInstructions="Elementum praesent leo" DecorationColor="Orci ipsum" DeliveryInstructions="Sociis justo adipiscing placerat lacus" ExpectedDeliveryDate="08/12/2010 08:40:20" FrostingFlavor="Neque tortor" MainColor="Vitae sit praesent pretium" Message="Amet rhoncus vulputate parturient auctor" Name="Accumsan vel" PhoneNumber="Congue sodales bibendum curabitur phasellus" StreetAddress="Nam consequat">
+	<NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.CakeFlavors>
+		<System:String>Parturient mauris aliquam nam</System:String>
+		<System:String>Nullam sed duis</System:String>
+		<System:String>Class aptent integer curae</System:String>
+		<System:String>Vestibulum quisque auctor vestibulum</System:String>
+		<System:String>Congue vivamus aliquam</System:String>
+		<System:String>Dis nunc maecenas</System:String>
+		<System:String>Phasellus est aliquet amet ante</System:String>
+		<System:String>Consequat cursus</System:String>
+		<System:String>Convallis donec hac dignissim</System:String>
+		<System:String>Dictum lectus libero</System:String>
+	</NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.CakeFlavors>
+	<NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.Cities>
+		<System:String>Adipiscing penatibus vel platea primis</System:String>
+		<System:String>Cubilia morbi dapibus facilisi nam</System:String>
+		<System:String>Nisl sed faucibus</System:String>
+		<System:String>Habitant nulla porttitor tincidunt</System:String>
+		<System:String>Parturient proin rutrum</System:String>
+		<System:String>Inceptos interdum augue dolor</System:String>
+		<System:String>Fames sapien</System:String>
+		<System:String>Lobortis semper vestibulum nunc felis</System:String>
+		<System:String>Nascetur tristique vestibulum</System:String>
+		<System:String>Egestas pharetra dis</System:String>
+	</NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.Cities>
+	<NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.CakeSizes>
+		<System:String>Blandit arcu diam eget fermentum</System:String>
+		<System:String>Parturient fringilla mus elit</System:String>
+		<System:String>Vestibulum ligula habitasse bibendum litora</System:String>
+		<System:String>Nec etiam non hendrerit</System:String>
+		<System:String>Enim erat himenaeos luctus eros</System:String>
+		<System:String>Commodo magnis mattis per sed</System:String>
+		<System:String>Sem imperdiet mauris malesuada</System:String>
+		<System:String>Nibh mollis nisi dictumst vestibulum</System:String>
+		<System:String>Fusce montes lorem</System:String>
+		<System:String>Sit nostra eleifend ornare conubia</System:String>
+	</NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.CakeSizes>
+	<NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.FrostingColors>
+		<System:String>Gravida est taciti lorem tellus</System:String>
+		<System:String>Magna parturient</System:String>
+		<System:String>Vestibulum massa tempor</System:String>
+		<System:String>Pulvinar hac</System:String>
+		<System:String>Leo vestibulum</System:String>
+		<System:String>Adipiscing sagittis</System:String>
+		<System:String>Iaculis senectus</System:String>
+		<System:String>Tempus metus sociosqu</System:String>
+		<System:String>Pede suscipit ultricies</System:String>
+		<System:String>Quam morbi mus</System:String>
+	</NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.FrostingColors>
+	<NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.FrostingFlavors>
+		<System:String>Quis parturient netus torquent nec</System:String>
+		<System:String>Urna nulla turpis vestibulum vestibulum</System:String>
+		<System:String>Varius venenatis non cras</System:String>
+		<System:String>Duis porta</System:String>
+		<System:String>Lacinia laoreet purus</System:String>
+		<System:String>Risus ultrices</System:String>
+		<System:String>Adipiscing vehicula natoque</System:String>
+		<System:String>Aenean volutpat velit mauris posuere</System:String>
+		<System:String>Per sed nunc maecenas</System:String>
+		<System:String>Potenti sem nullam aptent</System:String>
+	</NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel.FrostingFlavors>
+</NanasNook_ViewModel_FrontOfficeScreen:NewOrderDetailViewModel>

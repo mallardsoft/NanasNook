@@ -1,0 +1,21 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:NanasNook"
+    x:Class="NanasNook.Window1"
+    Title="{Binding Title}"
+    Height="488"
+    Width="933">
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition/>
+    		<RowDefinition Height="Auto"/>
+    	</Grid.RowDefinitions>
+
+    	<local:ProvisionControl DataContext="{Binding Provision}" Style="{StaticResource CollapsedWhenNull}"/>
+        <local:FrontOfficeControl DataContext="{Binding FrontOffice}" Style="{StaticResource CollapsedWhenNull}" />
+        <local:DeprovisionControl VerticalAlignment="Bottom"  Style="{StaticResource CollapsedWhenNull}" DataContext="{Binding Deprovision}" Grid.Row="1"/>
+        <local:KitchenControl DataContext="{Binding Kitchen}" Style="{DynamicResource CollapsedWhenNull}"/>
+
+    </Grid>
+</Window>

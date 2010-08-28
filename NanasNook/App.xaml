@@ -1,0 +1,69 @@
+﻿<Application
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="NanasNook.App"
+    Startup="Application_Startup" Exit="Application_Exit" mc:Ignorable="d">
+	<Application.Resources>
+		<Color x:Key="LabelColor">#FF6A6565</Color>
+		<Style TargetType="{x:Type Label}">
+			<Setter Property="Foreground">
+				<Setter.Value>
+					<SolidColorBrush Color="{DynamicResource LabelColor}"/>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="Padding" Value="5"/>
+			<Setter Property="HorizontalContentAlignment" Value="Left"/>
+			<Setter Property="VerticalContentAlignment" Value="Top"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Label}">
+						<Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+						</Border>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsEnabled" Value="false">
+								<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Color x:Key="FrontOfficeBackgroundColor">#FF686E9D</Color>
+
+        <Style
+            TargetType="FrameworkElement"
+            x:Key="CollapsedWhenNull">
+            <Setter
+                Property="Visibility"
+                Value="Visible" />
+            <Style.Triggers>
+                <DataTrigger
+                    Binding="{Binding}"
+                    Value="{x:Null}">
+                    <Setter
+                        Property="Visibility"
+                        Value="Collapsed" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="DisabledWhenNull"
+        	TargetType="FrameworkElement"
+            >
+        	<Setter
+        		Property="IsEnabled"
+        		Value="True" />
+        	<Style.Triggers>
+        		<DataTrigger
+        			Binding="{Binding}"
+        			Value="{x:Null}">
+        			<Setter
+        				Property="IsEnabled"
+        				Value="False" />
+        		</DataTrigger>
+        	</Style.Triggers>
+        </Style>
+        <Color x:Key="KitchenBackgroundColor">#FF9D6868</Color>
+    </Application.Resources>
+</Application>
