@@ -18,25 +18,31 @@ namespace NanasNook.Model
                 phoneNumber));
 		}
 
-		public void SetCurrentCakeDetails(
-            string size, 
-            string cakeFlavor, 
-            string frostingFlavor, 
-            string mainColor, 
-            string decorationColor, 
-            string message, 
+        public void SetCurrentCakeDetails(
+            string size,
+            string cakeFlavor,
+            string frostingFlavor,
+            string mainColor,
+            string decorationColor,
+            string message,
             string cakeInstructions)
         {
-            Community.AddFact(new CakeDetail(
+            CakeSize cakeSizeFact = Community.AddFact(new CakeSize(Company, size));
+            CakeFlavor cakeFlavorFact = Community.AddFact(new CakeFlavor(Company, cakeFlavor));
+            FrostingFlavor frostingFlavorFact = Community.AddFact(new FrostingFlavor(Company, frostingFlavor));
+            FrostingColor mainColorFact = Community.AddFact(new FrostingColor(Company, mainColor));
+            FrostingColor decorationColorFact = Community.AddFact(new FrostingColor(Company, decorationColor));
+            CakeDetail prototype = new CakeDetail(
                 this,
-                Community.AddFact(new CakeSize(Company, size)),
-                Community.AddFact(new CakeFlavor(Company, cakeFlavor)),
-                Community.AddFact(new FrostingFlavor(Company, frostingFlavor)),
-                Community.AddFact(new FrostingColor(Company, mainColor)),
-                Community.AddFact(new FrostingColor(Company, decorationColor)),
+                cakeSizeFact,
+                cakeFlavorFact,
+                frostingFlavorFact,
+                mainColorFact,
+                decorationColorFact,
                 CurrentCakeDetails,
                 message,
-                cakeInstructions));
+                cakeInstructions);
+            Community.AddFact(prototype);
         }
 
         public void SetCurrentDeliveryDetails(
