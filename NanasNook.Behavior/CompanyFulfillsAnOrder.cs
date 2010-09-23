@@ -49,6 +49,13 @@ namespace NanasNook.Behavior
             Synchronize();
         }
 
+        [When("the kitchen pulls an order")]
+        public void KitchenPullsAnOrder()
+        {
+            _kitchenCommunity.AddFact(new Pull(_kitchen.Company.BackloggedOrders.Single(), _kitchen));
+            Synchronize();
+        }
+
         [Then("kitchen sees empty backlog")]
         public void KitchenSeesAnEmptyBacklog()
         {
