@@ -1,0 +1,2 @@
+﻿Given a front office machine and a kitchen machine in the same community
+Then kitchen sees empty backlog
