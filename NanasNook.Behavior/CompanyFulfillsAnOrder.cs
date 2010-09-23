@@ -13,28 +13,38 @@ namespace NanasNook.Behavior
     [ActionSteps]
     public class CompanyFulfillsAnOrder
     {
+        private MemoryCommunicationStrategy _sharedCommunication;
         private Community _frontOfficeCommunity;
         private Community _kitchenCommunity;
         private Company _frontOfficeCompany;
         private Kitchen _kitchen;
 
-        [Given("a front office machine and a kitchen machine in the same community")]
-        public void SetupFrontOfficeAndKitchen()
+        [Given("a community")]
+        public void SetupCommunity()
         {
-            MemoryCommunicationStrategy sharedCommunication = new MemoryCommunicationStrategy();
+            _sharedCommunication = new MemoryCommunicationStrategy();
+        }
+
+        [Given("a front office machine")]
+        public void SetupFrontOffice()
+        {
             _frontOfficeCommunity = new Community(new MemoryStorageStrategy())
-                .AddCommunicationStrategy(sharedCommunication)
+                .AddCommunicationStrategy(_sharedCommunication)
                 .RegisterAssembly(typeof(Machine))
                 .Subscribe(() => _frontOfficeCompany);
-
-            _kitchenCommunity = new Community(new MemoryStorageStrategy())
-                .AddCommunicationStrategy(sharedCommunication)
-                .RegisterAssembly(typeof(Machine))
-                .Subscribe(() => _kitchen.Company);
 
             Machine frontOfficeMachine = _frontOfficeCommunity.AddFact(new Machine());
             _frontOfficeCompany = _frontOfficeCommunity.AddFact(new Company("NanasNook"));
             _frontOfficeCommunity.AddFact(new ProvisionFrontOffice(frontOfficeMachine, _frontOfficeCompany));
+        }
+
+        [Given("a kitchen machine")]
+        public void SetupKitchen()
+        {
+            _kitchenCommunity = new Community(new MemoryStorageStrategy())
+                .AddCommunicationStrategy(_sharedCommunication)
+                .RegisterAssembly(typeof(Machine))
+                .Subscribe(() => _kitchen.Company);
 
             Machine kitchenMachine = _kitchenCommunity.AddFact(new Machine());
             Company kitchenCompany = _kitchenCommunity.AddFact(new Company("NanasNook"));
