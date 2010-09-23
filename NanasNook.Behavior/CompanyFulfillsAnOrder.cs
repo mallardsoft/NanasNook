@@ -66,6 +66,24 @@ namespace NanasNook.Behavior
             Synchronize();
         }
 
+        [When("the kitchen commits to an order")]
+        public void KitchenCommitsToAnOrder()
+        {
+            _kitchenCommunity.AddFact(
+                new Commitment(
+                    _kitchen.PullsInProgress.Single(),
+                    Enumerable.Empty<CakeDetail>(),
+                    Enumerable.Empty<Commitment>()));
+        }
+
+        [When("the kitchen completes an order")]
+        public void KitchenCompletesAnOrder()
+        {
+            _kitchenCommunity.AddFact(
+                new Completed(
+                    _kitchen.PullsInProgress.Single().CurrentCommitments.Single()));
+        }
+
         [Then("kitchen sees empty backlog")]
         public void KitchenSeesAnEmptyBacklog()
         {
@@ -76,6 +94,24 @@ namespace NanasNook.Behavior
         public void KitchenSeesABackloggedOrder()
         {
             Assert.IsTrue(_kitchen.Company.BackloggedOrders.Any());
+        }
+
+        [Then("the order is backlogged")]
+        public void TheOrderIsBacklogged()
+        {
+            Assert.IsTrue(_frontOfficeCompany.BackloggedOrders.Single().IsBacklogged);
+        }
+
+        [Then("the order is in progress")]
+        public void TheOrderIsInProgress()
+        {
+            Assert.IsTrue(_frontOfficeCompany.PendingOrders.Single().IsInProgress);
+        }
+
+        [Then("the order is completed")]
+        public void TheOrderIsCompleted()
+        {
+            Assert.IsTrue(_frontOfficeCompany.PendingOrders.Single().IsCompleted);
         }
 
         private void Synchronize()
