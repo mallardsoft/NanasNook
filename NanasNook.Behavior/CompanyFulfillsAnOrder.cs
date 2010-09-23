@@ -6,7 +6,8 @@ using NBehave.Narrator.Framework;
 using UpdateControls.Correspondence;
 using NanasNook.Model;
 using UpdateControls.Correspondence.Memory;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+//using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace NanasNook.Behavior
 {
